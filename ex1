@@ -7,10 +7,10 @@ int main(void) {
 
   while( contador <= fim ) {
     float nota;
-    printf("Nota %d: ", contador);
+    printf("Inserir %dª nota: ", contador);
     scanf ("%f", &nota);
-    contador = contador + 1;
-    total = total + nota;
+    contador += 1;
+    total += nota;
   }
   float media = total / 3;
   printf ("Média: %.2f", media);
