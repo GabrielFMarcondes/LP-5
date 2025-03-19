@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int L1;
+    int L2;
+    int L3;
+    
+while (L1 != -1) {
+    printf ("insira o lado 1: ");
+    scanf ("%d", &L1);
+    if (L1 == -1) { 
+        puts ("Encerrado");
+        return 0;
+    }
+    printf ("insira o lado 2: ");
+    scanf ("%d", &L2);
+    printf ("insira o lado 3: ");
+    scanf ("%d", &L3);
+if (L1 > L2) {
+    if (L1 > L3) {
+        if (L2 * L2 + L3 * L3 == L1 * L1) {
+            puts ("Pode ser um triangulo retangulo");
+        } else {
+            puts ("Não pode ser um triangulo retangulo");
+        }}}
+if (L2 > L1) {
+    if (L2 > L3) {
+        if ( L1 * L1 + L3 * L3 == L2 * L2) {
+            puts ("Pode ser um triangulo retangulo");
+        } else {
+            puts ("Não pode ser um triangulo retangulo");
+        }}}
+if (L3 > L1) {
+    if (L3 > L2) {
+        if (L2 * L2 + L1 * L1 == L3 * L3) {
+            puts ("Pode ser um triangulo retangulo");
+        } else {
+            puts ("Não pode ser um triangulo retangulo");
+        }}}
+}
+  return 0;
+}
