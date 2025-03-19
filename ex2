@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  float total = 0;
+  int contador = 1;
+  float nota;
+  
+  printf ("*inserir -5 para calcular a média*\n");
+
+  printf("Inserir %dª nota: ", contador);
+  scanf("%f", &nota);
+
+  while(nota != -5) {
+    total = total + nota;
+    contador += 1;
+    printf("Inserir %dª nota: ", contador);
+    scanf("%f", &nota);
+  }
+  float media = total / (contador - 1);
+  printf("Média: %.2f", media);
+
+  return 0;
+}
