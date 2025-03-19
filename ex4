@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float raio;
+    float pi = 3.14;
+    
+    printf ("Insira a medida do raio do círculo (em metros): ");
+    scanf ("%f", &raio);
+    
+    float diametro = 2 * raio;
+    float circunferencia = pi * diametro;
+    float area = (raio * raio) * pi;
+    
+    printf ("Diametro do Círculo: %.2fm\n", diametro);
+    printf ("Circunferência do Círculo: %.2fm\n", circunferencia);
+    printf ("Área do Círculo: %.2fm²\n", area);
+
+  return 0;
+}
