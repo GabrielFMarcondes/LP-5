@@ -6,7 +6,7 @@ int main() {
     int L3;
     
 while (L1 != -1) {
-    printf ("insira o lado 1: ");
+    printf ("insira o lado 1 (inserir -1 para encerrar): ");
     scanf ("%d", &L1);
     if (L1 == -1) { 
         puts ("Encerrado");
